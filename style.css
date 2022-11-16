@@ -18,6 +18,16 @@
 .color-white{
     color: white;
 }
+
+.bg-red{
+    background-color:red ;
+}
+.bg-shadow{
+    background-color:rgb(151, 146, 228) ;
+}
+.bg-white{
+    background-color:white;
+}
 /*flex*/
 
 .flex-space-between-center{
@@ -31,8 +41,26 @@
     
 }
 
-/*commands*/
 
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.flex-col-center-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex-col-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*commands*/
+.border{
+    border: 2px solid black;
+}
 /*tag*/
 a{
     text-decoration: none;
@@ -44,18 +72,16 @@ ul{
     font-size: 15px;
 }
 
-body{
-    height: 100%;
-    background-color: black;
+
+section{
+    width: 100%;
 }
-
-
 /*testo*/
 .content-txt{
     font-size: 10rem;
 }
 
-/*contenitore*/
+/*contenitori*/
 
 
 .contenitore{
@@ -63,6 +89,7 @@ body{
     margin: 0 auto;
     height: 100%;
 }
+
 
 /*header*/
 
@@ -72,6 +99,7 @@ header{
     right: 0;
     left: 0;
     height: 4rem;
+    z-index: 2;
 }
 
 
@@ -95,7 +123,6 @@ li button{
 
 
 }
-.menu{}
 
 /*introduction*/
 
@@ -107,8 +134,10 @@ li button{
 .card{
     width: 100%;
     border: 2px dotted black;
-    height: 1vh ;
+    height: 100%;
     background-color: aqua;
+    border-radius: 30px;
+    padding: 20px;
 }
 
 
@@ -119,26 +148,67 @@ li button{
 
 .column{
     padding: 20px;
+    height: 100%;
+}
+.column-big{
+    padding: 20px;
+    height: 100%;
+}
+
+
+/*introcudtion-cards*/
+
+
+
+
+.big img{
+    max-width: 100%;
+}
+
+
+.introduction i{
+    font-size: 50px;
 }
 
 
 
 
+/*strategic-plannning*/
 
 
+.strategic-planning{
+    margin-top: 50px;
+    padding: 50px 0;
+}
+
+.right-box{   
+    border-radius:30px;
+    padding: 5%;
+    margin-top: 50px;
+}
 
 
+.right-box i{
+    
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
 
 
+.left-box .title-sp{
+    margin: 70px 0;
+}
 
 
+.left-box img, .right-box img{
+    max-width: 100%;
+}
 
 
-
-
-
-
-
+.right-box p{
+    margin: 50px 0;
+}
 
 
 
@@ -146,7 +216,23 @@ li button{
 
 /*"tablet"*/
 
+@media screen and (min-width:768px){
 
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:stretch;
+    }
+    .column-big{
+        width: calc((100%/3)*2 - 20px);
+    }
+
+    .introduction .column{
+        width: calc(100%/3 - 10px);
+    }
+
+    
+}
 
 
 
@@ -166,5 +252,28 @@ li button{
     }
     .menu{
         display: none;
+    }
+
+    /*sp section*/
+
+    
+    .right-box , .left-box{
+        width:40%;
+    }
+
+    
+    .right-box{
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    }
+
+    
+    .strategic-planning .contenitore{
+        position:relative;
+    }
+    
+    .strategic-planning .contenitore{
+        width: 60%;
     }
 }
