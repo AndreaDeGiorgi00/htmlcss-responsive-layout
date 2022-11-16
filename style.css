@@ -81,7 +81,7 @@ section{
     font-size: 10rem;
 }
 
-/*contenitori*/
+/*contenitore*/
 
 
 .contenitore{
@@ -210,6 +210,95 @@ li button{
     margin: 50px 0;
 }
 
+/*Team*/
+
+
+.contenitore-immagine{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+.team-card{
+    border-radius: 20px;
+    padding: 20px;
+    margin: 50px 0;
+
+}
+
+.contenitore-immagine img{
+    max-height: 100%;
+    margin-left:-50px;
+}
+
+
+.team-card p{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.team-card span{
+    margin-top: 30px;
+}
+
+.contenitore-immagine.donna img{
+    margin-left: -55px;
+}
+.contenitore-immagine.uomo img{
+    margin-left: -45px;
+}
+
+
+.contenitore span{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -231,7 +320,21 @@ li button{
         width: calc(100%/3 - 10px);
     }
 
+    /*team-section*/
+
     
+    .team-card.flex-col-center-center{
+        flex-direction: row;
+    }
+
+    .contenitore-immagine{
+        background-image: url(img/testimonial2.jpg);
+        
+    }
+    .txt-team-card{
+        width: 80%;
+    }
+   
 }
 
 
@@ -276,4 +379,6 @@ li button{
     .strategic-planning .contenitore{
         width: 60%;
     }
+    
+    
 }
