@@ -5,7 +5,7 @@
     margin: 0;
     font-family: 'PT Sans', sans-serif;
 }
-
+button
 /*colors*/
 .bg-darkblue{
     background-color: #0084FD;
@@ -64,6 +64,11 @@
 .border{
     border: 2px solid black;
 }
+
+
+.bold{
+    font-weight: bold;
+}
 /*tag*/
 a{
     text-decoration: none;
@@ -78,7 +83,11 @@ ul{
 
 section{
     width: 100%;
+    
 }
+
+
+
 /*testo*/
 .content-txt{
     font-size: 10rem;
@@ -108,6 +117,7 @@ header{
     left: 0;
     height: 4rem;
     z-index: 2;
+    background-color: #0084FD;
 }
 
 
@@ -320,33 +330,67 @@ li button{
 .benefits h2{
     padding-top: 50px;
 }
+section.benefits{
+    padding: 30px 0;
+}
+
+/*abuout us*/
+
+.txt-box .title{
+    text-align: left;
+}
+.about-us{
+    padding:100px 0; 
+}
+.about-us img{
+    margin: 0;
+    max-width: 100%;
+}
+
+
+.user {
+    position: relative;
+    
+}
+
+
+.user>i{
+    position: absolute;
+    top: 0;
+    left: 150px;
+    font-size: 50px;
+}
+
+
+.user p{
+    font-size: 30px;
+    margin: 40px 0;
+    font-weight: bold;
+}
 
 
 
+.txt-box :nth-child(2){
+    
+    margin: 40px 0;
+}
+
+.user button{
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: white;
+    
+}
 
 
+.user button i{
+    margin-right: 5px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.txt-box{
+    margin-bottom: 50px;
+}
 
 /*"tablet"*/
 
@@ -399,9 +443,34 @@ li button{
     
     }
 
+    /*about us*/
 
     
+    .about-us>.contenitore{
+        display: flex;
+        justify-content: space-between;
+    }
+
     
+    .txt-box{
+        text-align: left;
+        width: 80%;
+    }
+
+    .txt-box p{
+        line-height: 35px;
+        width: 80%;
+    }
+
+    .user p{
+        
+        margin: 15px 0;
+    }
+
+    
+    .user{
+        width: 240px;
+    }
 
 
 
