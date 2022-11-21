@@ -6,6 +6,8 @@
     font-family: 'PT Sans', sans-serif;
 }
 button
+
+
 /*colors*/
 .bg-darkblue{
     background-color: #0084FD;
@@ -18,7 +20,12 @@ button
 .color-white{
     color: white;
 }
-
+.color-orange{
+    color: rgb(223, 149, 11);
+}
+.color-darkblue{
+    color: #0084FD;
+}
 .bg-red{
     background-color:red ;
 }
@@ -49,6 +56,11 @@ button
     display: flex;
     flex-direction: column;
 }
+.flex-col-sta{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
 .flex-col-center-center{
     display: flex;
     flex-direction: column;
@@ -65,10 +77,24 @@ button
     border: 2px solid black;
 }
 
-
+.position-r{
+    position: relative;
+}
 .bold{
     font-weight: bold;
 }
+
+.padding-top{
+    padding-top: 20px;
+}
+
+.padding-bottom{
+    padding-bottom: 20px;
+}
+.textalign-center{
+    text-align: center;
+}
+
 /*tag*/
 a{
     text-decoration: none;
@@ -148,16 +174,15 @@ li button{
     padding-top: 7rem;
 }
 
-
 .card{
     width: 100%;
-    border: 2px dotted black;
+    border: 2px solid #B5DDFF;
     height: 100%;
-    background-color: aqua;
+    background-color: #B5DDFF;
     border-radius: 30px;
-    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
 }
-
 
 .row{
     width: 100%;
@@ -166,25 +191,41 @@ li button{
 
 .column{
     padding: 20px;
-    height: 100%;
+    
 }
 .column-big{
     padding: 20px;
-    height: 100%;
+    
+}
+.title-card-big {
+    font-size: 30px;
+    margin: 20px 0;
+    width: 50%;
 }
 
 
+.card
 /*introcudtion-cards*/
 
 
+.txt button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #0084FD;
+    color: white;
+    margin: 50px 0;
+}
 
 
+.txt button i{
+    font-size:20px ;
+}
 .big img{
     max-width: 100%;
 }
 
 
-.introduction i{
+.column i{
     font-size: 50px;
 }
 
@@ -392,6 +433,41 @@ section.benefits{
     margin-bottom: 50px;
 }
 
+/*closing-section*/
+.get-started{
+    margin-bottom: 30px;
+    padding-top: 90px;
+}
+.simple{
+    margin: 20px 0;
+    font-size: 35px;
+}
+
+.free{
+    font-size: 40px;
+    margin: 20px;
+}
+
+.get-started-button{
+    
+    padding: 15px 90px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+
+}
+.description{
+    margin: 20px 0;
+}
+
+.punto{
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    background-color: black;
+    display: inline-block;
+    margin-bottom: 2px;
+}
+
 /*"tablet"*/
 
 @media screen and (min-width:768px){
@@ -409,6 +485,14 @@ section.benefits{
         width: calc(100%/3 - 10px);
     }
 
+    /*introduction*/
+
+    .big img {
+        max-width: 50%;
+        margin-left: -20px;
+    }
+    
+    
     /*team-section*/
 
     
@@ -455,11 +539,13 @@ section.benefits{
     .txt-box{
         text-align: left;
         width: 80%;
+
     }
 
     .txt-box p{
         line-height: 35px;
         width: 80%;
+        font-size: 20px;
     }
 
     .user p{
@@ -472,11 +558,14 @@ section.benefits{
         width: 240px;
     }
 
+    /*closingsection*/
+
+    .description{
+        margin: 20px 100px;
+    }
 
 
 }
-
-
 
 
 
@@ -494,6 +583,26 @@ section.benefits{
     }
     .menu{
         display: none;
+    }
+
+    /*introduction*/
+
+    .title-card-big {
+        font-size: 30px;
+        margin: 20px 0;
+        width: 50%;
+    }
+    
+    
+    .txt img{
+        position: absolute;
+        bottom: 0 ;
+        right: 0;
+        max-height: 90%;
+    }
+
+    .txt{
+        width: 50%;
     }
 
     /*sp section*/
@@ -523,5 +632,12 @@ section.benefits{
     .benefits-card{
         max-width: calc(100%/3 - 40px);
     }
+
+    /***closing section*/
+    .description{
+        margin: 20px 350px;
+    }
+
+
 
 }
